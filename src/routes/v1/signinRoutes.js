@@ -13,6 +13,10 @@ import signinSchema from "../../requests/signinRequest.js";
 
 const router = express.Router();
 
-router.post("/signin", requestHandler(signinSchema), signinController.signin);
+router.post(
+  "/admin/signin",
+  requestHandler(signinSchema),
+  signinController.signin
+);
 
 export default router;
